@@ -102,7 +102,7 @@ item (FEAT_HOUSES, item_office_building, 86, HOUSE_SIZE_1X1) {
 		probability:				7;
 		years_available:			[1950, 9999];
 		minimum_lifetime:			20;
-		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES | bitmask(CLIMATE_ARCTIC, ABOVE_SNOWLINE)];
 		removal_cost_multiplier:	140;
 		building_class:				1;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];

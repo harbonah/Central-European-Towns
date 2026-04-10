@@ -96,7 +96,7 @@ item (FEAT_HOUSES, item_apartment_building_t, 37, HOUSE_SIZE_1X1) {
 		probability:				7;
 		years_available:			[1920, 9999];
 		minimum_lifetime:			10;
-		availability_mask:			[bitmask(TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES];
+		availability_mask:			[bitmask(TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES | bitmask(CLIMATE_ARCTIC, ABOVE_SNOWLINE)];
 		removal_cost_multiplier:	120;
 		building_class:				1;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
@@ -119,7 +119,7 @@ item (FEAT_HOUSES, item_apartment_building_c, 59, HOUSE_SIZE_1X1) {
 		probability:				7;
 		years_available:			[1920, 9999];
 		minimum_lifetime:			10;
-		availability_mask:			[bitmask(TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB,), ALL_CLIMATES];
+		availability_mask:			[bitmask(TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB,), ALL_CLIMATES | bitmask(CLIMATE_ARCTIC, ABOVE_SNOWLINE)];
 		removal_cost_multiplier:	120;
 		building_class:				1;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
